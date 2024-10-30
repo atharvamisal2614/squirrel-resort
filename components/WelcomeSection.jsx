@@ -2,7 +2,7 @@
 const WelcomeSection = () => {
     return (
       <div className="container mx-auto px-6 md:px-12 py-12">
-        <div className="bottom-caption text-center">
+        <div className="bottom-caption text-justify md:text-center">
           <h1 className="text-2xl md:text-5xl font-serif text-black  mb-4 leading-tight">
             Welcome to Squirrel Resort
           </h1>
@@ -27,7 +27,7 @@ const WelcomeSection = () => {
             scenery along with top-notch facilities.
           </p><br/>
           
-          <p className="text-gray-400 mb-4 text-base md:text-lg font-serif leading-10 tracking-wider">
+          <p className="text-gray-400 mb-4  text-base md:text-lg font-serif leading-10 tracking-wider">
             Whether you want to relax by the infinity pool with amazing views or explore the cultural richness
             of Diveagar, Squirrel Resort offers a stay that combines
             comfort and a deep connection to the area&apos;s natural beauty.
