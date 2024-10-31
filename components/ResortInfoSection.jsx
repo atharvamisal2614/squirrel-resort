@@ -21,7 +21,7 @@ const ResortInfoSection = () => {
           <p>
             <Link href="/blogs/diveagar-beach" className="text-gray-600 tracking-wider leading-10 hover:text-gray-800 font-serif">
             
-                Diveagar Beach
+              Blog 1
               
             </Link>
           </p>
@@ -30,7 +30,7 @@ const ResortInfoSection = () => {
           <p>
             <Link href="/blogs/phansad-wildlife-sanctuary" className="text-gray-600 tracking-wider leading-10 hover:text-gray-800 font-serif">
           
-                Phansad Wildlife Sanctuary
+           Blog 2
      
             </Link>
           </p>
@@ -39,7 +39,7 @@ const ResortInfoSection = () => {
           <p>
             <Link href="/blogs/shrivardhan-beach" className="text-gray-600 tracking-wider leading-10 hover:text-gray-800 font-serif">
          
-                Shrivardhan Beach
+                Blog 3
            
             </Link>
           </p>
@@ -48,7 +48,7 @@ const ResortInfoSection = () => {
           <p>
             <Link href="/blogs/harihareshwar-temple-beach" className="text-gray-600 tracking-wider leading-10 hover:text-gray-800 font-serif">
           
-                Harihareshwar Temple and Beach
+              Blog 4
          
             </Link>
           </p>

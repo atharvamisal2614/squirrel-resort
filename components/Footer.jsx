@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="footer-section">
           <h4 className="text-lg font-semibold mb-2 font-serif">About Us</h4>
           <p className="text-gray-300 font-serif">
-            Discover the ultimate getaway at Squirrel Resort near the Diveagar Beach.
+            Discover the ultimate getaway at Squirrel Resort
           </p>
         </div>
 
@@ -42,14 +42,14 @@ const Footer = () => {
         <div className="footer-section">
           <h4 className="text-lg font-semibold mb-2 font-serif">Contact Us</h4>
           <p className="text-gray-300 font-serif">
-            Email: <a href="mailto:shivneri@gmail.com" className="text-gray-400 hover:text-gray-200 font-serif">shivneri@gmail.com</a>
+            Email: <a href="mailto:shivneri@gmail.com" className="text-gray-400 hover:text-gray-200 font-serif">squirrel@gmail.com</a>
           </p>
           <p className="text-gray-300 font-serif">
-            Phone: <a href="tel:+919090064242" className="text-gray-400 hover:text-gray-200 font-serif">+91 9090064242</a>, 
-            <a href="tel:+919090074242" className="text-gray-400 hover:text-gray-200 font-serif"> 9090074242</a>
+            Phone: <a href="tel:+919090064242" className="text-gray-400 hover:text-gray-200 font-serif">+91 9999999999</a>, 
+            <a href="tel:+919090074242" className="text-gray-400 hover:text-gray-200 font-serif"> 9999999999</a>
           </p>
           <p className="text-gray-300 font-serif">
-            Address: Gut No. 567/B Talani Pakhadi, Diveagar, Maharashtra 402404
+            Address: Gut No. 876, abcde, abcde, Pune
           </p>
         </div>
 

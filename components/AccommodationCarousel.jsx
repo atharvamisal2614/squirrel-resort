@@ -18,9 +18,9 @@ const AccommodationCarousel = () => {
     <div className="container mx-auto py-12">
       <div className="acc_div text-center mb-8">
         <p className="text-xl text-gray-400 font-serif tracking-widest">ACCOMMODATION</p> <br/>
-        <h1 className="text-2xl md:text-4xl  mb-2 text-gray-800 font-serif tracking-wide">Elevate Your Stay in Scenic Nature</h1>
+        <h1 className="text-2xl md:text-4xl  mb-2 text-gray-800 font-serif tracking-wide">Elevate Your Stay </h1>
         <h2 className="text-md md:text-lg font-medium text-gray-600 font-serif tracking-widest">
-          A cozy room often features warm lighting, soft textures, and inviting decor that creates a sense of comfort and relaxation.
+          A cozy room often features warm lighting, soft textures, and inviting decor.
         </h2>
       </div>
 

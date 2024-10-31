@@ -14,28 +14,15 @@ const WelcomeSection = () => {
           </h2>
   
           <p className="text-gray-400 mb-4 text-base md:text-lg font-serif leading-10 tracking-wider">
-            Nestled in the tranquil beauty of Diveagar, our resort offers a unique
-            blend of luxury, comfort, and natural splendor, making it
-            the perfect destination for a relaxing vacation, a
-            memorable family getaway, or a special celebration.
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem doloribus, laboriosam earum adipisci velit omnis corporis pariatur voluptas sunt. Sed minus officia nihil, quisquam culpa veritatis dolorum recusandae pariatur aspernatur.
           </p> <br/>
           
           <p className="text-gray-400 mb-4 text-base md:text-lg font-serif leading-10 tracking-wider">
-            In the midst of this beautiful setting stands Squirrel Resort, one of
-            the finest resorts in Diveagar. Surrounded by nature, the resort
-            provides a luxurious getaway where guests can enjoy the stunning
-            scenery along with top-notch facilities.
+       Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, quia? Dolores explicabo ex labore corrupti cupiditate modi fugiat, libero ea, laudantium facere odio officiis, quasi odit deserunt fugit asperiores! Voluptates!
           </p><br/>
           
           <p className="text-gray-400 mb-4  text-base md:text-lg font-serif leading-10 tracking-wider">
-            Whether you want to relax by the infinity pool with amazing views or explore the cultural richness
-            of Diveagar, Squirrel Resort offers a stay that combines
-            comfort and a deep connection to the area&apos;s natural beauty.
-            Check in to reward yourself with a much-needed reset as we welcome you into
-            our well-appointed rooms, pamper your palate with regional fare, and look 
-            after your needs with love and personalized attention. Ours is above all, a family
-            hotel designed to welcome couples, friends, and families that are looking to make new 
-            memories and relive old ones.
+           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem inventore obcaecati, doloremque reiciendis ratione, deserunt dolore eaque neque labore quas harum impedit sit sint rem distinctio tempora in dignissimos. Ad.
           </p>
         </div>
       </div>

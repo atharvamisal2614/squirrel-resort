@@ -11,7 +11,7 @@ const ImageGallery = () => {
               className="w-full h-auto object-cover transition-transform duration-500 hover:scale-105"
             />
             <div className="caption_img text-lg font-serif  text-gray-400 text-center p-2 mt-2 tracking-widest">
-              Expansive Parking Area
+              Great Bedrooms
             </div>
           </div>
   
@@ -23,7 +23,7 @@ const ImageGallery = () => {
               className="w-full h-auto object-cover transition-transform duration-500 hover:scale-105"
             />
             <div className="caption_img  text-gray-400 text-lg font-serif text-center p-2 mt-2 tracking-widest">
-              Royal AC Banquet Hall
+              Perfect Breathfresh
             </div>
           </div>
   
@@ -35,7 +35,7 @@ const ImageGallery = () => {
               className="w-full h-auto object-cover transition-transform duration-500 hover:scale-105"
             />
             <div className="caption_img  text-gray-400 text-lg font-serif text-center p-2 mt-2 tracking-widest">
-              Infinity Pool
+              Swimming Pool
             </div>
           </div>
         </div>
