@@ -69,7 +69,7 @@ const Navbar = () => {
         {/* Sticky Navbar with Background Color */}
         <nav className="sticky top-0 left-0 w-full bg-opacity-70 text-white p-4 flex justify-between items-center z-50">
           <Link href="/" className="flex title-font font-medium items-center">
-            <img src="/images/logo.png" alt="Logo" className="w-28 h-20" />
+            <img src="/images/squirrel-logo.png" alt="Logo" className="w-28 h-20" />
           </Link>
           <div className="hidden md:flex md:ml-auto md:space-x-5">
             <Link href="/" className="hover:text-gray-300">Home</Link>
