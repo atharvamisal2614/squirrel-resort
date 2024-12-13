@@ -1,11 +1,12 @@
 import localFont from "next/font/local";
 import Navbar from "@/components/Navbar";
 import WelcomeSection from "@/components/WelcomeSection";
-import ImageGallery from "@/components/ImageGallery";
 import FineDining from "@/components/FineDining";
 import AccommodationCarousel from "@/components/AccommodationCarousel";
-import ResortInfoSection from "@/components/ResortInfoSection";
 import Footer from "@/components/Footer";
+import Dining from "@/components/Dining";
+import Services from "@/components/Services";
+import FAQ from "@/components/FAQ";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -23,10 +24,12 @@ export default function Home() {
    <>
     <Navbar />
    <WelcomeSection />
-   <ImageGallery />
-   <FineDining />
+   <Dining />
    <AccommodationCarousel />
-   <ResortInfoSection />
+   <FineDining />
+    <Services />
+    <FAQ />
+ 
    <Footer />
    </>
   );

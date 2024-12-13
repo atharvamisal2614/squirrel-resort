@@ -8,6 +8,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        customOrange:'#b04926',
         background: "var(--background)",
         foreground: "var(--foreground)",
       },

@@ -1,37 +1,37 @@
-// components/Navbar.jsx
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
-import { FaBars } from 'react-icons/fa';
-
-const slides = [
-  {
-    imageUrl: '/images/hotel1.jpg',
-    title: 'Welcome to Squirrel Resort',
-    subtitle: 'Your Ultimate Escape to Paradise',
-    link: '/stay',
-  },
-  {
-    imageUrl: '/images/hotel2.jpg',
-    title: 'Welcome to Squirrel Resort',
-    subtitle: 'Your Ultimate Escape to Paradise',
-    link: '/stay',
-  },
-  {
-    imageUrl: '/images/hotel3.jpg',
-    title: 'Welcome to Squirrel Resort',
-    subtitle: 'Your Ultimate Escape to Paradise',
-    link: '/stay',
-  },
-];
+import { FaBars, FaSearch, FaTimes } from 'react-icons/fa';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [searchOpen, setSearchOpen] = useState(false);
   const [currentSlide, setCurrentSlide] = useState(0);
+
+  const slides = [
+    {
+      imageUrl: '/images/hotel1.jpg',
+      title: 'Discover Serenity',
+      subtitle: 'Where Luxury Meets Nature',
+      link: '/stay',
+    },
+    {
+      imageUrl: '/images/hotel2.jpg',
+      title: 'Experience Elegance',
+      subtitle: 'Your Perfect Getaway Awaits',
+      link: '/stay',
+    },
+    {
+      imageUrl: '/images/hotel3.jpg',
+      title: 'Welcome to Squirrel Resort',
+      subtitle: 'Redefining Comfort and Style',
+      link: '/stay',
+    },
+  ];
 
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length);
-    }, 2000);
+    }, 3000);
     return () => clearInterval(interval);
   }, []);
 
@@ -39,11 +39,76 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   };
 
+  const toggleSearch = () => {
+    setSearchOpen(!searchOpen);
+  };
+
   return (
-    <header className="relative text-gray-600 body-font">
-      {/* Slider Container */}
-      <div className="relative w-full h-screen overflow-hidden">
-        {/* Slide Container */}
+    <header>
+      {/* Navbar */}
+      <nav className="fixed top-0 left-0 w-full bg-orange-50 p-4 z-50">
+        <div className="max-w-7xl mx-auto flex items-center justify-between">
+          {/* Logo */}
+          <Link href="/" className="flex items-center space-x-2">
+            <img src="/images/squirrel-logo.png" alt="Logo" className="w-32 h-20" />
+           
+          </Link>
+
+          {/* Desktop Menu */}
+          <div className="hidden md:flex space-x-6 items-center">
+            <Link href="/" className="text-gray-800 hover:text-orange-400">Home</Link>
+            <Link href="/about" className="text-gray-800 hover:text-orange-400">About Us</Link>
+            <Link href="/rooms" className="text-gray-800 hover:text-orange-400">Rooms</Link>
+            <Link href="/gallery" className="text-gray-800 hover:text-orange-400">Gallery</Link>
+            <Link href="/contact" className="text-gray-800 hover:text-orange-400">Contact</Link>
+            <button
+              onClick={toggleSearch}
+              className="text-gray-800 hover:text-orange-400 flex items-center"
+            >
+              <FaSearch size={18} />
+            </button>
+            <Link
+              href="/book"
+              className="bg-customOrange text-white px-4 py-2 rounded shadow-lg hover:bg-orange-600"
+            >
+              Book Now
+            </Link>
+          </div>
+
+          {/* Mobile Menu Button */}
+          <button
+            onClick={toggleMenu}
+            className="md:hidden text-customOrange focus:outline-none"
+          >
+            <FaBars size={24} />
+          </button>
+        </div>
+
+        {/* Mobile Menu */}
+        <div
+          className={`fixed top-0 right-0 w-3/4 h-full bg-orange-50 text-gray-800 transition-transform transform md:hidden ${
+            isOpen ? 'translate-x-0' : 'translate-x-full'
+          }`}
+        >
+          <button
+            onClick={toggleMenu}
+            className="absolute top-4 right-4 text-customOrange focus:outline-none"
+          >
+            <FaTimes size={24} />
+          </button>
+          <div className="flex flex-col items-center space-y-6 mt-16">
+            <Link href="/" className="hover:text-orange-400" onClick={toggleMenu}>Home</Link>
+            <Link href="/about" className="hover:text-orange-400" onClick={toggleMenu}>About Us</Link>
+            <Link href="/rooms" className="hover:text-orange-400" onClick={toggleMenu}>Rooms</Link>
+            <Link href="/gallery" className="hover:text-orange-400" onClick={toggleMenu}>Gallery</Link>
+            <Link href="/contact" className="hover:text-orange-400" onClick={toggleMenu}>Contact</Link>
+            <Link href="/book" className="bg-customOrange px-4 py-2 text-white rounded shadow-lg hover:bg-orange-600" onClick={toggleMenu}>Book Now</Link>
+          </div>
+        </div>
+      </nav>
+
+      {/* Hero Section with Slider */}
+      <div className="relative w-full h-screen overflow-hidden mt-16">
         {slides.map((slide, index) => (
           <div
             key={index}
@@ -52,49 +117,45 @@ const Navbar = () => {
             }`}
             style={{ backgroundImage: `url(${slide.imageUrl})` }}
           >
-            {/* Image Overlay */}
             <div className="absolute inset-0 bg-black opacity-40" />
             <div className="flex items-center justify-center h-full relative">
-              <div className="text-center text-white p-4 md:p-8 z-10">
-                <h2 className="text-lg md:text-xl font-semibold mb-2">{slide.title}</h2>
-                <h1 className="text-2xl md:text-4xl font-bold mb-4">{slide.subtitle}</h1>
-                <Link href={slide.link} className="inline-block px-4 py-2 mt-4 text-lg font-medium text-white border border-white rounded transition duration-300 opacity-90">
-                  Book Now
+              <div className="text-center text-white p-6">
+                <h2 className="text-3xl md:text-4xl font-bold mb-4 animate-fade-in">
+                  {slide.title}
+                </h2>
+                <p className="text-lg md:text-2xl mb-6 animate-fade-in-slow">
+                  {slide.subtitle}
+                </p>
+                <Link
+                  href={slide.link}
+                  className="px-6 py-3 text-lg font-medium bg-customOrange hover:bg-orange-600 rounded shadow-lg transition duration-300"
+                >
+                  Explore Now
                 </Link>
               </div>
             </div>
           </div>
         ))}
-
-        {/* Sticky Navbar with Background Color */}
-        <nav className="sticky top-0 left-0 w-full bg-opacity-70 text-white p-4 flex justify-between items-center z-50">
-          <Link href="/" className="flex title-font font-medium items-center">
-            <img src="/images/squirrel-logo.png" alt="Logo" className="w-28 h-20" />
-          </Link>
-          <div className="hidden md:flex md:ml-auto md:space-x-5">
-            <Link href="/" className="hover:text-gray-300">Home</Link>
-            <Link href="/about" className="hover:text-gray-300">About Us</Link>
-            <Link href="/" className="hover:text-gray-300">Accommodations</Link>
-            <Link href="/" className="hover:text-gray-300">Gallery</Link>
-            <Link href="/" className="hover:text-gray-300">Contact Us</Link>
-            <Link href="/" className="hover:text-gray-300">Book Now</Link>
-          </div>
-          {/* Mobile Menu Button */}
-          <button onClick={toggleMenu} className="md:hidden text-gray-900 focus:outline-none">
-            <FaBars size={24} />
-          </button>
-        </nav>
       </div>
 
-      {/* Mobile Navbar Links */}
-      <nav className={`fixed top-0 right-0 w-full h-full bg-white text-black flex flex-col items-center justify-center space-y-6 transition-transform transform md:hidden ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}>
-        <Link href="/" className="hover:text-gray-300" onClick={toggleMenu}>Home</Link>
-        <Link href="/" className="hover:text-gray-300" onClick={toggleMenu}>About Us</Link>
-        <Link href="/" className="hover:text-gray-300" onClick={toggleMenu}>Accommodations</Link>
-        <Link href="/" className="hover:text-gray-300" onClick={toggleMenu}>Gallery</Link>
-        <Link href="/" className="hover:text-gray-300" onClick={toggleMenu}>Contact Us</Link>
-        <Link href="/" className="hover:text-gray-300" onClick={toggleMenu}>Book Now</Link>
-      </nav>
+      {/* Search Bar */}
+      {searchOpen && (
+        <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex items-center justify-center">
+          <div className="relative bg-white rounded-lg p-4 w-4/5 max-w-md">
+            <button
+              onClick={toggleSearch}
+              className="absolute top-2 right-2 text-gray-500 focus:outline-none"
+            >
+              <FaTimes size={20} />
+            </button>
+            <input
+              type="text"
+              placeholder="Search..."
+              className="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-orange-500"
+            />
+          </div>
+        </div>
+      )}
     </header>
   );
 };

@@ -5,7 +5,7 @@ const FineDining = () => {
       backgroundAttachment: "fixed",
       backgroundSize: "cover",
       backgroundPosition: "center",
-      height: "100vh", // Full viewport height
+      height: "100vh",
     };
   
     return (
