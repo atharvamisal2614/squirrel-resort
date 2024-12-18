@@ -15,9 +15,9 @@ const WelcomeSection = () => {
           {/* Left Image */}
           <div className="md:w-1/2">
             <img
-              src="/images/hotel2.jpg"
+              src="/images/squirrel-scene-main.jpg"
               alt="Squirrel Resort"
-              className="w-full rounded-lg shadow-lg"
+              className="w-full md:h-96 rounded-lg shadow-lg"
             />
           </div>
 

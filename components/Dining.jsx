@@ -8,7 +8,7 @@ const Dining = () => {
         {/* Right Image */}
         <div className="md:w-1/2">
           <img
-            src="/images/hotel1.jpg"
+            src="/images/squirrel-scene-2.jpg"
             alt="Squirrel Resort Dining"
             className="w-full rounded-lg shadow-lg"
           />

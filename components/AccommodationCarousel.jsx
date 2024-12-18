@@ -56,45 +56,101 @@ const AccommodationCarousel = () => {
             options={flickityOptions}
           >
             {/* Carousel Cells */}
-            <div className="relative w-full h-96 md:h-[500px]">
+            <div className="relative w-full h-96 md:h-[600px]">
               <Image
-                src="/images/hotel1.jpg"
+                src="/images/squirrel-beds.jpg"
                 alt="Deluxe Room"
                 layout="fill"
                 objectFit="cover"
                 className="rounded-lg"
               />
-              <div className="gradient-overlay absolute inset-0 bg-black opacity-50" />
+              <div className="gradient-overlay absolute inset-0 " />
               <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 text-white text-lg font-semibold font-serif tracking-widest">
                 Deluxe Room
               </div>
             </div>
 
-            <div className="relative w-full h-96 md:h-[500px]">
+            <div className="relative w-full h-96 md:h-[600px]">
               <Image
-                src="/images/hotel2.jpg"
+                src="/images/squirrel-bedroom.jpg"
                 alt="Premium Deluxe Room"
                 layout="fill"
                 objectFit="cover"
                 className="rounded-lg"
               />
-              <div className="gradient-overlay absolute inset-0 bg-black opacity-50" />
+              <div className="gradient-overlay absolute inset-0 " />
               <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 text-white text-lg font-semibold font-serif tracking-widest">
                 Premium Deluxe Room
               </div>
             </div>
 
-            <div className="relative w-full h-96 md:h-[500px]">
+            <div className="relative w-full h-96 md:h-[600px]">
               <Image
-                src="/images/hotel3.jpg"
+                src="/images/squirrel-hall.jpg"
                 alt="Super Deluxe Room"
                 layout="fill"
                 objectFit="cover"
                 className="rounded-lg"
               />
-              <div className="gradient-overlay absolute inset-0 bg-black opacity-50" />
+              <div className="gradient-overlay absolute inset-0" />
               <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 text-white text-lg font-semibold font-serif tracking-widest">
-                Super Deluxe Room
+               Squirrel Super Deluxe Room
+              </div>
+            </div>
+
+            <div className="relative w-full h-96 md:h-[600px]">
+              <Image
+                src="/images/squirrel-swimmingpool-1.jpg"
+                alt="Super Deluxe Room"
+                layout="fill"
+                objectFit="cover"
+                className="rounded-lg"
+              />
+              <div className="gradient-overlay absolute inset-0" />
+              <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 text-white text-lg font-semibold font-serif tracking-widest">
+               Squirrel Wide Swimmingpool
+              </div>
+            </div>
+
+            <div className="relative w-full h-96 md:h-[600px]">
+              <Image
+                src="/images/squirrel-swimmingpool-2.jpg"
+                alt="Super Deluxe Room"
+                layout="fill"
+                objectFit="cover"
+                className="rounded-lg"
+              />
+              <div className="gradient-overlay absolute inset-0" />
+              <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 text-white text-lg font-semibold font-serif tracking-widest">
+               Squirrel Swimmingpool
+              </div>
+            </div>
+
+            <div className="relative w-full h-96 md:h-[600px]">
+              <Image
+                src="/images/squirrel-tent-1.jpg"
+                alt="Super Deluxe Room"
+                layout="fill"
+                objectFit="cover"
+                className="rounded-lg"
+              />
+              <div className="gradient-overlay absolute inset-0" />
+              <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 text-white text-lg font-semibold font-serif tracking-widest">
+               Squirrel Townships
+              </div>
+            </div>
+
+            <div className="relative w-full h-96 md:h-[600px]">
+              <Image
+                src="/images/squirrel-tent.jpg"
+                alt="Super Deluxe Room"
+                layout="fill"
+                objectFit="cover"
+                className="rounded-lg"
+              />
+              <div className="gradient-overlay absolute inset-0" />
+              <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 text-white text-lg font-semibold font-serif tracking-widest">
+               Squirrel Township
               </div>
             </div>
 

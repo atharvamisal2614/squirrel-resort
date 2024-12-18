@@ -1,7 +1,7 @@
 // components/FineDining.jsx
 const FineDining = () => {
     const sectionStyle = {
-      backgroundImage: "url('/images/hotel3.jpg')",
+      backgroundImage: "url('/images/squirrel-scene-2.jpg')",
       backgroundAttachment: "fixed",
       backgroundSize: "cover",
       backgroundPosition: "center",
